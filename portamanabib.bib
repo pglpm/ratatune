@@ -6,7 +6,7 @@
 %% Home page: http://magnaspesmeretrix.org/
 %% Email (remove ZZ): pglpm0ZZ[at]gmail.com
 %% Created: 2000-08-23T16:53:30+0200
-%% Last-Updated: 2020-03-27T18:27:55+0100
+%% Last-Updated: 2020-05-25T14:43:09+0200
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 % NB: This database contains also items whose content's validity I
@@ -324,9 +324,9 @@
 @String{csq = {Cogn.\ Sci.\ Q.}}
 @String{csr = {Chem.\ Soc.\ Rev.}}
 @String{csrsgr = {\langlatin{Commentationes Societatis Regiae Scientiarum Gottingensis recentiores}}}
-@String{cssc = {Comm.\ Stat.\ Simulat.\ Comput.}}
+@String{cssc = {Commun.\ Stat.\ -- Simul.\ Comput.}}
 @String{cst = {Compos.\ Sci.\ Tech.}}
-@String{cstm = {Commun.\ Statist.\ -- Theory Meth.}}
+@String{cstm = {Commun.\ Stat.\ -- Theory Methods}}
 @String{cuz = {Chemie in unserer Zeit}}
 @String{czjp = {Czech.\ J. Phys.}}
 @String{czmj = {Czech.\ Math.\ J.}}
@@ -346,6 +346,7 @@
 @String{easps = {EAS Publ.\ Series}}
 @String{eccv = {Eur.\ Conf.\ Computer Vision}}
 @String{ecmlpkdd = {Eur.\ Conf.\ Mach.\ Learn.\ Princ.\ Pract.\ Knowledge Discovery Datab.}}
+@String{edrev = {Edinburgh Rev.}}
 @String{een = {\langgerman{Ergebn. d. exakt. Naturw.}}}
 @String{efm = {Eng.\ Fract.\ Mech.}}
 @String{ejc = {Electron.\ J. Combinator.}}
@@ -795,6 +796,7 @@
 @String{ns = {New Scientist}}
 @String{nw = {Naturwissenschaften}}
 @String{obhdp = {Organ.\ Behav.\ Hum.\ Decis.\ Process.}}
+@String{obs = {Observatory}}
 @String{oc = {Opt.\ Comm.}}
 @String{oe = {Opt.\ Express}}
 @String{og = {Oceanography}}
@@ -845,7 +847,6 @@
 @String{physis = {Physis (Firenze)}}
 @String{piascs = {Proc.\ Indian Acad.\ Sci.\ (Chem.\ Sci.)}}
 @String{picm = {Proc.\ Int.\ Congress Mathematicians}}
-@String{picml = {Proc.\ ICML}}
 @String{pieec = {Proc.\ IEE C}}
 @String{pieee = {Proc.\ IEEE}}
 @String{pier = {Progr.\ Electromagnetics Research (PIER)}}
@@ -1613,6 +1614,7 @@ year =	       {2007},
 keywords =     {cognitive science, Plinko}
 }
 
+
 @Article{adamsetal2008,
 author =       {Ryan Prescott Adams and Iain Murray and David J. C. MacKay},
 title =	       {The {Gaussian} Process Density Sampler},
@@ -1626,7 +1628,7 @@ keywords =     {non-parametric Bayesian probability theory}
 @Article{adamsetal2009,
 author =       {Adams, Ryan Prescott and Murray, Iain and MacKay, David J. C.},
 title =	       {Tractable Nonparametric {Bayesian} Inference in {Poisson} Processes with {Gaussian} Process Intensities},
-journal =      picml,
+journal =      pmlr,
 year =	       {2009},
 volume =       {26},
 pages =	       {9--16},
@@ -5832,7 +5834,7 @@ year =	       {2015},
 volume =       {162},
 number =       {1--2},
 pages =	       {327--364},
-keywords =     {minimum-discrimination-information, minimum-relative-entropy, symmetries of Fisher-information metric}
+keywords =     {minimum-discrimination-information, minimum-relative-entropy, symmetries of Fisher-information metric, Jeffreys prior}
 }
 
 @Book{ayetal2017,
@@ -11325,6 +11327,7 @@ address =      {New York},
 edition =      {repr.},
 note =	       {First publ.\ 1994},
 keywords =     {probability theory, decision theory, model comparison},
+mynote =       {Lindley's paradox \sect~6.1.4 p.~394 Ex.~6.6},
 origdate =     {1994}
 }
 
@@ -12156,6 +12159,17 @@ year =	       {2014},
 series =       {Springer theses},
 address =      {Cham},
 keywords =     {Markov dynamics, ergodicity, first-passage time}
+}
+
+@Book{bianchinietal2013,
+editor =       {Monica Bianchini and Marco Maggini and Lakhmi C. Jain},
+title =	       {Handbook on Neural Information Processing},
+publisher =    {Springer},
+year =	       {2013},
+volume =       {49},
+series =       {Intelligent systems reference library},
+address =      {New York},
+keywords =     {belief networks, Bayesian networks, causality, Bayesian probability theory, causality}
 }
 
 @InCollection{bicak2000,
@@ -13214,6 +13228,29 @@ volume =       {6},
 number =       {5},
 pages =	       {732--734},
 keywords =     {convex geometry}
+}
+
+@Article{blyth1972,
+author =       {Colin R. Blyth},
+title =	       {On {Simpson's} Paradox and the Sure-Thing Principle},
+journal =      jasa,
+year =	       {1972},
+volume =       {67},
+number =       {338},
+pages =	       {364--366},
+keywords =     {Bayesian probability theory, causality, inference, Bayes factors, correlation, exchangeability}
+}
+
+@Article{blyth1972b,
+author =       {Colin R. Blyth},
+title =	       {Some Probability Paradoxes in Choice from Among Random Alternatives},
+journal =      jasa,
+year =	       {1972},
+volume =       {67},
+number =       {338},
+pages =	       {366--373},
+note =	       {See also comments and rejoinder in \citebi{lindleyetal1972b}},
+keywords =     {Bayesian probability theory, causality, inference, Bayes factors, correlation, exchangeability}
 }
 
 @PhdThesis{blythe2001,
@@ -14307,7 +14344,8 @@ year =	       {1926},
 volume =       {37},
 number =       {12},
 pages =	       {863--867},
-note =	       {\url{http://www.physics.princeton.edu/~mcdonald/examples/EM/}. See also \citebi{born1926b,born1926c}}
+note =	       {\url{http://www.physics.princeton.edu/~mcdonald/examples/EM/}. See also \citebi{born1926b,born1926c}},
+mynote =       {probabilistic interpretation of wave function: footnote 1 p.~865}
 }
 
 @Article{born1926b,
@@ -27019,6 +27057,15 @@ pages =	       {787--838},
 keywords =     {quantum field theory}
 }
 
+@Book{crombie1963,
+editor =       {A. C. Crombie},
+title =	       {Scientific Change: Historical studies in the intellectual, social and technical conditions for scientific discovery and technical invention, from antiquity to the present\subtitleproc{: Symposium On the History of Science, University of Oxford 9--15 July 1961}},
+publisher =    {Heinemann},
+year =	       {1963},
+address =      {London},
+keywords =     {probability theory, statistical mechanics, Maxwell, Herschel}
+}
+
 @Article{crommelinetal2008,
 author =       {Daan T. Crommelin and Eric Vanden-Eijnden},
 title =	       {Subgrid-Scale Parameterization with Conditional {Markov} Chains},
@@ -34700,6 +34747,16 @@ note =	       {\haleprint{tel-01429303}},
 keywords =     {pre-conditioned Crank-Nicolson}
 }
 
+@Article{dutordoiretal2018,
+author =       {Vincent Dutordoir and Hugh Salimbeni and James Hensman and Marc Deisenroth},
+title =	       {Gaussian Process Conditional Density Estimation},
+journal =      nips,
+year =	       {2018},
+volume =       {31},
+pages =	       {2385--2395},
+keywords =     {density estimation, Bayesian probability theory}
+}
+
 @Article{dutta2012,
 author =       {Somak Dutta},
 title =	       {Multiplicative random walk {Metropolis-Hastings} on the real line},
@@ -34790,6 +34847,17 @@ edition =      {2},
 note =	       {\url{https://ontology.iupac.org/}. First publ.\ 2004},
 keywords =     {dimensional analysis, quantity calculus},
 origdate =     {2004}
+}
+
+@Article{dyeretal1993,
+author =       {Danny Dyer and Rebecca L. Pierce},
+title =	       {On the choice of the prior distribution in hypergeometric sampling},
+journal =      cstm,
+year =	       {1993},
+volume =       {22},
+number =       {8},
+pages =	       {2125--2146},
+keywords =     {conjugate prior, beta-binomial distribution}
 }
 
 @Article{dykeetal1952,
@@ -43271,6 +43339,17 @@ note =	       {See also \citebi{freedman1963}},
 keywords =     {Bayesian probability theory}
 }
 
+@Article{freedman1977,
+author =       {David Freedman},
+title =	       {A Remark on the Difference Between Sampling With and Without Replacement},
+journal =      jasa,
+year =	       {1977},
+volume =       {72},
+number =       {359},
+pages =	       {681},
+keywords =     {hypergeometric distribution, multinomial distribution, exchangeability, probability theory}
+}
+
 @Article{freedman1991,
 author =       {Freedman, David A.},
 title =	       {Statistical Models and Shoe Leather},
@@ -44712,6 +44791,17 @@ year =	       {2016},
 address =      {Cambridge},
 note =	       {\url{http://mlg.eng.cam.ac.uk/yarin/blog_2248.html}},
 keywords =     {Bayesian non-parametric probability theory, neural networks}
+}
+
+@Book{galambosetal1978,
+author =       {J{\'a}nos Galambos and Samuel Kotz},
+title =	       {Characterizations of Probability Distributions: A Unified Approach with an Emphasis on Exponential and Related Models},
+publisher =    {Springer},
+year =	       {1978},
+volume =       {675},
+series =       {Lecture notes in mathematics},
+address =      {Berlin},
+keywords =     {exponential family, sufficient statistics}
 }
 
 @Book{galavotti2003,
@@ -46927,6 +47017,25 @@ pages =	       {807--835},
 keywords =     {probability theory}
 }
 
+@InCollection{gillispie1963,
+author =       {C. C. Gillispie},
+title =	       {Intellectual Factors in the Background of Analysis by Probabilities},
+booktitle =    {\citein{crombie1963}},
+year =	       {1963},
+chapter =      {14},
+pages =	       {431--453},
+keywords =     {Maxwell, Herschel, Bayesian probability theory, induction, uncertainty, statistical mechanics}
+}
+
+@Book{gilman1989,
+editor =       {E. Ward Gilman},
+title =	       {Webster's Dictionary of English Usage},
+publisher =    {Merriam-Webster},
+year =	       {1989},
+address =      {Springfield, USA},
+keywords =     {\enquote{The argument is a case of fooling oneself with one's own terminology}, p.~475, \emph{genitive} entry}
+}
+
 @Book{gilmore1974,
 author =       {Robert Gilmore},
 title =	       {Lie Groups, Lie Algebras, and Some of Their Applications},
@@ -47846,6 +47955,16 @@ address =      {New York},
 edition =      {37},
 note =	       {First publ.\ 1977},
 origdate =     {1977}
+}
+
+@Article{goldstein1985,
+author =       {Goldstein, Jr., S. J.},
+title =	       {{Christiaan Huygens'} measurement of the distance to the {Sun}},
+journal =      obs,
+year =	       {1985},
+volume =       {105},
+pages =	       {32--33},
+keywords =     {astronomy, Cassini}
 }
 
 @InCollection{goldstein2001_r2001,
@@ -49906,6 +50025,17 @@ note =	       {See also \citebi{maclure1998}},
 keywords =     {Bayesian probability theory, diagnosis}
 }
 
+@Article{greenlandetal1999,
+author =       {Sander Greenland and James M. Robins and Judea Pearl},
+title =	       {Confounding and Collapsibility in Causal Inference},
+journal =      ss,
+year =	       {1999},
+volume =       {14},
+number =       {1},
+pages =	       {29--46},
+keywords =     {belief networks, Bayesian networks, causality, Bayesian probability theory, causality}
+}
+
 @Article{greenlandetal2016,
 author =       {Sander Greenland and Stephen J. Senn and Kenneth J. Rothman and John B. Carlin and Charles Poole and Steven N. Goodman and Douglas G. Altman and Naomi S. Altman and Daniel J. Benjamin and James O. Berger and Yoav Benjamini and Donald A. Berry and John B. Carlin and George Cobb and Andrew Gelman and Steven N. Goodman and Sander Greenland and John P. A. Ioannidis and Valen E. Johnson and Michael Lavine and Joseph Horowitz and Michael J. Lew and Roderick J. Little and Deborah G. Mayo and Anne Mich{\`e}le Millar and Kenneth J. Rothman and Stephen Senn and Dalene Stangl and P. B. Stark and Stephen T. Ziliak},
 title =	       {Online Supplement and Discussion: {ASA} Statement on Statistical Significance and {$p$}-values},
@@ -50631,6 +50761,16 @@ year =	       {2013},
 volume =       {110},
 number =       {12},
 pages =	       {4464--4469}
+}
+
+@Book{gros2009_t2014,
+author =       {Fr{\'e}d{\'e}ric Gros},
+title =	       {A Philosophy of Walking},
+publisher =    {Verso},
+year =	       {2014},
+address =      {London},
+note =	       {Transl.\ by John Howe. First publ.\ in French 2009},
+origdate =     {2009}
 }
 
 @Book{grosboeletal1991,
@@ -52720,6 +52860,17 @@ year =	       {1978},
 volume =       {18},
 number =       {3},
 pages =	       {1250--1260}
+}
+
+@Article{hald1960,
+author =       {A. Hald},
+title =	       {The Compound Hypergeometric Distribution and a System of Single Sampling Inspection Plans Based on Prior Distributions and Costs},
+journal =      tm,
+year =	       {1960},
+volume =       {2},
+number =       {3},
+pages =	       {275--340},
+keywords =     {conjugate prior, beta-binomial distribution, decision theory, cost function, factorial moments}
 }
 
 @Book{hald2007,
@@ -56240,6 +56391,19 @@ volume =       {58},
 number =       {2},
 pages =	       {133--139},
 keywords =     {continuum thermomechanics}
+}
+
+@Article{herschel1850,
+author =       {John Frederick William Herschel},
+title =	       {Quetelet \emph{on Probabilities}},
+journal =      edrev,
+year =	       {1850},
+volume =       {92},
+number =       {185},
+pages =	       {1--57},
+note =	       {\url{https://archive.org/details/edinburghreview75coxgoog/}},
+keywords =     {Bayesian probability theory, induction, logic, uncertainty, Maxwell, psychological parallel of Laplace's rule of succession},
+mynote =       {\enquote{Metaphysicians may dispute concerning the nature of causation; and it will always, no doubt, be difficult to explain and demonstrate the objective reality of that relation: but the reality, as an internal feeling, of the expectation that what has happened under given circumstances will happen again under precisely similar circumstances, is independent of metaphysical dispute and above it. It is an axiom drawn from the inward consciousness of our nature by involuntary generalisation.} p~1. \begin{quotation}it must at once be admitted that no conclusion from inductive reasoning, \emph{i.e.} from the observed to the unobserved, can enjoy more than a provisional security. If the unbroken experience of all observers, in innumerable instances, be really no ground for extending the conclusion to one unobserved instance admittedly parallel, then and in that case inductive argument should have no influence on human belief. But if, on the other hand, such large and uniform experience of the past is irresistibly felt to warrant a conclusion as to the future, we should then confidently adopt that conclusion, though with a distinct perception and admission of a risk of error more or less infinitesimal, Which we make up our minds to disregard. And it is thus that we come to rest in \emph{practical}, as distinct from \emph{mathematical}, certainty, in all physical inquiry, and in all the transactions of life.\par It is to express the perception, and enable us to speak consistently, and at the same time definitely, concerning the amount, of this risk, that the term \textsc{Probability} has been invented -- a term having reference to our ignorance of the analysis of events, and of the efficient causes which really \emph{necessitate} the successive steps by which they arise; and that not generally, but with special and personal reference to the party using that term; so that the same physical relation -- the same historical statement -- the same future event -- may have very different degrees of probability in the eyes of parties differently informed of the circumstances, the causes in action, the reputation for veracity of the testifying authors, or their opportunities of knowing the facts related.\end{quotation} pp.~2--3. \equote{Into the delicate and refined system ot mathematical reasoning, now generally known as the `Calculus of Probabilities,' the metaphysical idea of Causation does not enter.} p.~4}
 }
 
 @Article{hersteinetal1953,
@@ -59834,7 +59998,7 @@ pages =	       {315--320}
 @Article{hutter2001,
 author =       {Marcus Hutter},
 title =	       {General Loss Bounds for Universal Sequence Prediction},
-journal =      picml,
+journal =      pmlr,
 year =	       {2001},
 volume =       {18},
 pages =	       {210--217}
@@ -61901,7 +62065,8 @@ year =	       {1968},
 volume =       {SSC-4},
 number =       {3},
 pages =	       {227--241},
-note =	       {\url{http://bayes.wustl.edu/etj/node1.html}; repr.\ in \citebi{jaynes1983_r1989}, pp.~116--130}
+note =	       {\url{http://bayes.wustl.edu/etj/node1.html}; repr.\ in \citebi{jaynes1983_r1989}, pp.~116--130},
+mynote =       {Jeffreys prior: \begin{quotation}For example, in a chemical laboratory we find a jar containing an unknown and unlabeled compound. We are at first completely ignorant as to whether a small sample of this compound will dissolve in water or not. But having observed that one small sample does dissolve, we infer immediately that all samples of this compound are water soluble, and although this conclusion does not carry quite the force of deductive proof, we feel strongly that the inference was justified. \textelp{}\par The weight is concentrated overwhelmingly on the values $\theta= 0$ or $\theta = 1$. The prior (68) thus accounts for the kind of inductive inferences noted in the case of the chemical\end{quotation} \sect~VII pp.~237--239}
 }
 
 @Article{jaynes1968b,
@@ -62710,7 +62875,7 @@ address =      {London},
 edition =      {3rd ed.\ with corrections},
 note =	       {First publ.\ 1939},
 keywords =     {Bayesian probability theory},
-mynote =       {informational irrelevance: \sect~1.7. \enquote{we cannot give a universal rule for them beyond the common-sense one, that if anybody does not know what his suggested value is, or whether there is one, he does not know what question he is asking and consequently does not know what his answer means.} \sect~3.1, p.~124. \enquote{\emph{Any clearly stated law has a positive prior probability, and therefore an appreciable posterior probability until there is definite evidence against it.}}, \sect~3.2, p.~129 (Jeffreys's emphasis). \enquote{The Boltzmann $H$-theorem of the kinetic theory of gases rests on a fallacious application of it [the product rule], since it considers an assembly of molecules, possibly with differences of density from place to place, and gives the joint probability that two molecules will be in adjoining regions as the product of the separate probabilities that they will be. If there are differences of density, and one molecule is in a region chosen at random, that is some evidence that the region is one of high density; then the probability that a second is in the region, given that the first is, is somewhat higher than it would be in the absence of information about the first. Similar considerations apply to Boltzmann's treatment of the velocities. In this case the mistake has not prevented the right result from being obtained, though it does not follow from the hypotheses.}, \sect~1.2, p.~28},
+mynote =       {Jeffreys prior: \enquote{The rule $dx/x(1-x)$ goes too far the other way. It would lead to the conclusion that if a sample is of one type with respect to some property there is probability $1$ that the whole population is of that type.} \sect~III.3.1 p.~124. Informational irrelevance: \sect~1.7. \enquote{we cannot give a universal rule for them beyond the common-sense one, that if anybody does not know what his suggested value is, or whether there is one, he does not know what question he is asking and consequently does not know what his answer means.} \sect~3.1, p.~124. \enquote{\emph{Any clearly stated law has a positive prior probability, and therefore an appreciable posterior probability until there is definite evidence against it.}}, \sect~3.2, p.~129 (Jeffreys's emphasis). \enquote{The Boltzmann $H$-theorem of the kinetic theory of gases rests on a fallacious application of it [the product rule], since it considers an assembly of molecules, possibly with differences of density from place to place, and gives the joint probability that two molecules will be in adjoining regions as the product of the separate probabilities that they will be. If there are differences of density, and one molecule is in a region chosen at random, that is some evidence that the region is one of high density; then the probability that a second is in the region, given that the first is, is somewhat higher than it would be in the absence of information about the first. Similar considerations apply to Boltzmann's treatment of the velocities. In this case the mistake has not prevented the right result from being obtained, though it does not follow from the hypotheses.}, \sect~1.2, p.~28},
 origdate =     {1939}
 }
 
@@ -62743,8 +62908,8 @@ year =	       {1955},
 volume =       {5},
 number =       {20},
 pages =	       {275--289},
-keywords =     {choice of parameter prior, induction, Jeffreys prior, complexity, Huzurbazar prior, Pitman-Koopman theorem, sufficiency, Achilles Tortoise implication, quantum theory, uncertainty principle},
-mynote =       {\enquote{Most books on scientific method contain at least a chapter on probability theory. Most books on modern physics assume a knowledge of probability theory and claim to derive probability distributions. A casual observer might be led into supposing that the authors would be reasonably up to date in the subject. In fact, however, they seldom show any knowledge of it that is less than fifty years old, and some make it quite clear that the work of the last two hundred years has not yet attracted their attention. It is still widely believed that probability is an easy subject, and this is far from being the case} p.~275}
+keywords =     {choice of parameter prior, induction, Jeffreys prior, complexity, Huzurbazar prior, Pitman-Koopman theorem, sufficiency, sufficient statistics, Achilles Tortoise implication, quantum theory, uncertainty principle},
+mynote =       {\enquote{Most books on scientific method contain at least a chapter on probability theory. Most books on modern physics assume a knowledge of probability theory and claim to derive probability distributions. A casual observer might be led into supposing that the authors would be reasonably up to date in the subject. In fact, however, they seldom show any knowledge of it that is less than fifty years old, and some make it quite clear that the work of the last two hundred years has not yet attracted their attention. It is still widely believed that probability is an easy subject, and this is far from being the case} p.~275. \begin{quotation}Another type of generalisation that needs attention is as follows. If we are making a single drawing of a ball from a bag containing two balls, the probability that the ball will be white may be $\tfrac{1}{2}$ if either (1) the bag is known to contain one white and one black ball; (2) the balls are known either to be both white or both black, but we do not know which; or (3) the balls are equally likely to be both white, both black or one white and one black. Suppose we draw a ball and it is white. What is the probability that the other is white? In the three cases the answers are $0$, $1$, $\tfrac{2}{3}$.\par In stating initial probabilities for laws we are never asserting that we know how frequent instances of particular laws are in the world, nor that all events are covered by the same type of law. Thus (1) and (2) are not suitable analogues; the proper analogue is (3).\end{quotation} Appendix~II p.~288}
 }
 
 @Article{jeffreys1963,
@@ -66527,6 +66692,13 @@ number =       {1},
 pages =	       {192}
 }
 
+@Misc{kingma2013,
+author =       {Diederik P. Kingma},
+title =	       {Fast Gradient-Based Inference with Continuous Latent Variable Models in Auxiliary Form},
+year =	       {2013},
+keywords =     {variational autoencoder, neural networks, machine learning, density estimation, probability theory, deep networks}
+}
+
 @Article{kingmaetal2014,
 author =       {Diederik P. Kingma and Max Welling},
 title =	       {Auto-Encoding Variational {Bayes}},
@@ -66535,6 +66707,14 @@ year =	       {2014},
 volume =       {2014},
 pages =	       {1312.6114},
 keywords =     {deep networks}
+}
+
+@Misc{kingmaetal2014b,
+author =       {Diederik P. Kingma and Shakir Mohamed and Danilo Jimenez Rezende and Max Welling},
+title =	       {Semi-supervised Learning with Deep Generative Models},
+year =	       {2014},
+note =	       {\arxiveprint{1406.5298}},
+keywords =     {machine-learning, probability theory, density}
 }
 
 @Article{kingman1972,
@@ -66963,7 +67143,7 @@ keywords =     {truth interpretation}
 }
 
 @Book{kitcheretal1989,
-editor =       {Philip Kitcher and Wesley C. Salmon,},
+editor =       {Philip Kitcher and Wesley C. Salmon},
 title =	       {Scientific Explanation},
 publisher =    {University of Minnesota Press},
 year =	       {1989},
@@ -69400,6 +69580,18 @@ pages =	       {451--460},
 keywords =     {quantum mechanics}
 }
 
+@Article{kraemeretal2018,
+author =       {Lea Kr{\"a}mer and del Rio, L{\'i}dia},
+title =	       {Operational locality in global theories},
+journal =      ptrsa,
+year =	       {2018},
+volume =       {376},
+number =       {2123},
+pages =	       {20170321},
+keywords =     {convex framework, quantum theory, probability theory},
+mynote =       {cites \citebi{portamana2003b,portamana2004b}}
+}
+
 @Article{kragh1981,
 author =       {Helge Kragh},
 title =	       {The genesis of {Dirac's} relativistic theory of electrons},
@@ -70781,6 +70973,14 @@ year =	       {2005},
 volume =       {339},
 number =       {1--2},
 pages =	       {18--22}
+}
+
+@Misc{lahtinenetal2018,
+author =       {Valtteri Lahtinen and P. Robert Kotiuga and Antti Stenvall},
+title =	       {An electrical engineering perspective on missed opportunities in computational physics},
+year =	       {2018},
+note =	       {\arxiveprint{1809.01002}},
+keywords =     {twisted differential forms, chains, cochains, differential geometry, integration}
 }
 
 @Article{lai1981,
@@ -72210,6 +72410,17 @@ publisher =    {Cambridge University Press},
 year =	       {1985},
 address =      {Cambridge},
 keywords =     {probability theory}
+}
+
+@Article{latala1997,
+author =       {Rafa{\l} Lata{\l}a},
+title =	       {Estimation of moments of sums of independent real random variables},
+journal =      ap,
+year =	       {1997},
+volume =       {25},
+number =       {3},
+pages =	       {1502--1513},
+note =	       {hypergeometric distribution}
 }
 
 @InCollection{lathametal2013,
@@ -75533,6 +75744,18 @@ volume =       {34},
 number =       {1},
 pages =	       {1--41},
 keywords =     {Bayesian probability theory}
+}
+
+@Article{lindleyetal1972b,
+author =       {Dennis V. Lindley and I. J. Good and Robert L. Winkler and John W. Pratt and Colin R. Blyth},
+title =	       {Some Probability Paradoxes in Choice from Among Random Alternatives: Comments and rejoinder},
+journal =      jasa,
+year =	       {1972},
+volume =       {67},
+number =       {338},
+pages =	       {373--381},
+note =	       {See \citebi{blyth1972b}},
+keywords =     {Bayesian probability theory, causality, inference, Bayes factors, correlation, exchangeability}
 }
 
 @Article{lindleyetal1976,
@@ -81172,6 +81395,16 @@ pages =	       {704--714},
 keywords =     {generalized Riemann integral, integration, measure}
 }
 
+@InCollection{maxwell1850,
+author =       {Maxwell, (Clerk Maxwell), James},
+title =	       {Letter to {L. Campbell}},
+booktitle =    {\citein{campbelletal1882}},
+year =	       {1850},
+chapter =      {V},
+pages =	       {143},
+mynote =       {\enquote{They say that Understanding ought to work by the rules of right reason. These rules are, or ought to be, contained in Logic; but the actual science of Logic is conversant at present only with things either certain, impossible, or \emph{entirely} doubtful, none of which (fortunately) we have to reason on. Therefore the true Logic for this world is the Calculus of Probabilities, which takes account of the magnitude of the probability (which is, or which ought to be in a reasonable man's mind). This branch of Math., which is generally thought to favour gambling, dicing, and wagering, and therefore highly immoral, is the only ``Mathematics for Practical Men,'' as we ought to be. Now, as human knowledge comes by the senses in such a way that the existence of things external is only inferred from the harmonious (not similar) testimony of the different senses, Understanding, acting by the laws of right reason, will assign to different truths (or facts, or testimonies, or what shall I call them) different degrees of probability. Now, as the senses give new testimonies continually, and as no man ever detected in them any real inconsistency, it follows that the probability and \emph{credibility} of their testimony is increasing day by day, and the more a man uses them the more he believes them. He believes them. What is believing? When the probability (there is no better word found) in a man's mind of a certain proposition being true is greater than that of its being false, he believes it with a proportion of faith corresponding to the probability, and this probability may be increased or diminished by new facts. This is faith in general. When a man thinks he has enough of evidence for some notion of his he sometimes refuses to listen to any additional evidence \emph{pro} or \emph{con}, saying, ``It is a settled question, \emph{probatis probata}; it needs no evidence; it is certain.'' This is knowledge as distinguished from faith. He says, ``I do not believe; I know.'' ``If any man thinketh that he knoweth, he knoweth yet nothing as he ought to know.'' This knowledge is a shutting of one's ears to all arguments, and is the same as ``Implicit faith'' in one of its meanings. ``Childlike faith,'' confounded with it, is not credulity, for children are not credulous, but find out sooner than some think that many men are liars.}, \chap~V, Letter to L. Campbell, June? 1850, p.~143.}
+}
+
 @Article{maxwell1855,
 author =       {Maxwell, (Clerk Maxwell), James},
 title =	       {Experiments on Colour, as perceived by the Eye, with Remarks on Colour-Blindness},
@@ -81383,7 +81616,7 @@ number =       {204},
 pages =	       {437--441},
 note =	       {Repr.\ in \citebi{maxwell1890b_r1965} doc.~LXII pp.~361--378},
 keywords =     {statistics},
-mynote =       {definition of statistics: \begin{quotation}When the working members of Section F get hold of a Report of the Census, or any other document containing the numerical data of Economic and Social Science, they begin by distributing the whole population into groups, according to age, income-tax, education, religious belief, or criminal convictions. The number of individuals is far too great to allow of their tracing the history of each separately, so that, in order to reduce their labour within human limits, they concentrate their attention on small number of artificial groups. The varying number of individuals in each group, and not the varying state of each individual, is the primary datum from which they work.\par This, of course, is not the only method of studying human nature. We may observe the conduct of individual men and compare it with that conduct which their previous character and their present circumstances, according to the best existing theory, would lead us to expect. Those who practise this method endeavour to improve their knowledge of the elements of human nature, in much the same way as an astronomer corrects the elements of a planet by comparing its actual position with that deduced from the received elements. The study of human nature by parents and schoolmasters, by historians and statesmen, is therefore to be distinguished from that carried on by registrars and tabulators, and by those statesmen who put their faith in figures. The one may be called the historical, and the other the statistical method.\par The equations of dynamics completely express the laws of the historical method as applied to matter, but the application of these equations implies a perfect knowledge of all the data. But the smallest portion of matter which we can subject to experiment consists of millions of molecules, not one of which ever becomes individually sensible to us. We cannot, therefore, ascertain the actual motion of any one of these molecules, so that we are obliged to abandon the strict historical method, and to adopt the statistical method of dealing with large groups of molecules.\end{quotation}, p.~440}
+mynote =       {definition of statistics: \begin{quotation}The modern atomists have therefore adopted a method which is I believe new in the department of mathematical physics, though it has long been in use in the Section of Statistics. When the working members of Section F get hold of a Report of the Census, or any other document containing the numerical data of Economic and Social Science, they begin by distributing the whole population into groups, according to age, income-tax, education, religious belief, or criminal convictions. The number of individuals is far too great to allow of their tracing the history of each separately, so that, in order to reduce their labour within human limits, they concentrate their attention on small number of artificial groups. The varying number of individuals in each group, and not the varying state of each individual, is the primary datum from which they work.\par This, of course, is not the only method of studying human nature. We may observe the conduct of individual men and compare it with that conduct which their previous character and their present circumstances, according to the best existing theory, would lead us to expect. Those who practise this method endeavour to improve their knowledge of the elements of human nature, in much the same way as an astronomer corrects the elements of a planet by comparing its actual position with that deduced from the received elements. The study of human nature by parents and schoolmasters, by historians and statesmen, is therefore to be distinguished from that carried on by registrars and tabulators, and by those statesmen who put their faith in figures. The one may be called the historical, and the other the statistical method.\par The equations of dynamics completely express the laws of the historical method as applied to matter, but the application of these equations implies a perfect knowledge of all the data. But the smallest portion of matter which we can subject to experiment consists of millions of molecules, not one of which ever becomes individually sensible to us. We cannot, therefore, ascertain the actual motion of any one of these molecules, so that we are obliged to abandon the strict historical method, and to adopt the statistical method of dealing with large groups of molecules.\end{quotation}, p.~440}
 }
 
 @Article{maxwell1874,
@@ -81578,6 +81811,15 @@ title =	       {A Concise Dictionary of Middle English: From A.D.~1150 to~1580},
 publisher =    {Oxford University Press},
 year =	       {1888},
 address =      {Oxford}
+}
+
+@Book{mayo2018,
+author =       {Deborah G. Mayo},
+title =	       {Statistical Inference as Severe Testing: How to Get Beyond the Statistics Wars},
+publisher =    {Cambridge University Press},
+year =	       {2018},
+address =      {Cambridge},
+keywords =     {Bayesian probability theory, causality, inference, Bayes factors}
 }
 
 @Article{mazenko2010,
@@ -82716,13 +82958,13 @@ number =       {4},
 pages =	       {345--359}
 }
 
-@Book{mendelson1964_r1997,
+@Book{mendelson1964_r2015,
 author =       {Elliott Mendelson},
 title =	       {Introduction to Mathematical Logic},
-publisher =    {Chapman \amp\ Hall},
-year =	       {1997},
-address =      {London},
-edition =      {4},
+publisher =    {CRC Press},
+year =	       {2015},
+address =      {Boca Raton, USA},
+edition =      {6},
 note =	       {First publ.\ 1964},
 keywords =     {axiom of choice},
 origdate =     {1964}
@@ -85400,6 +85642,18 @@ year =	       {2010},
 address =      {New York},
 note =	       {Ed.\ by Stephen E. Fienberg, David C. Hoaglin, Judith M. Tanur},
 keywords =     {Bayesian probability theory}
+}
+
+@Book{mostelleretal1961_r1965,
+author =       {Frederick Mosteller and Robert E. K. Rourke and Thomas, Jr., George B.},
+title =	       {Probability with Statistical Applications},
+publisher =    {Addison-Wesley},
+year =	       {1965},
+series =       {Addison-Wesley series in statistics},
+address =      {Reading, USA},
+edition =      {2nd pr.},
+note =	       {First publ.\ 1961. Also publ.\ in abridged form as \emph{Probability and Statistics}},
+origdate =     {1961}
 }
 
 @Article{mostelleretal1963,
@@ -91808,7 +92062,7 @@ address =      {London},
 edition =      {3rd rev.\ and enl.\ ed.},
 note =	       {First publ.\ 1892},
 keywords =     {scientific method},
-mynote =       {\enquote{Now this is the peculiarity of scientific method, that when once it has become a habit of mind, that mind converts \emph{all} facts whatsoever into science. The field of science is unlimited; its material is endless, every group of natural phenomena, every phase of social life, every stage of past or present development is material for science. \emph{The unity of all science consists alone in its method, not in its material}. The man who classifies facts of any kind whatever, who sees their mutual relation and describes their sequences, is applying the scientific method and is a man of science. The facts may belong to the past history of mankind, to the social statistics of our great cities, to the atmosphere of the most distant stars, to the digestive organs of a worm, or to the life of a scarcely visible bacillus. It is not facts themselves which make science, but the method by which they are dealt with}, \sect~I.5, p.~12},
+mynote =       {\enquote{Now this is the peculiarity of scientific method, that when once it has become a habit of mind, that mind converts \emph{all} facts whatsoever into science. The field of science is unlimited; its material is endless, every group of natural phenomena, every phase of social life, every stage of past or present development is material for science. \emph{The unity of all science consists alone in its method, not in its material}. The man who classifies facts of any kind whatever, who sees their mutual relation and describes their sequences, is applying the scientific method and is a man of science. The facts may belong to the past history of mankind, to the social statistics of our great cities, to the atmosphere of the most distant stars, to the digestive organs of a worm, or to the life of a scarcely visible bacillus. It is not facts themselves which make science, but the method by which they are dealt with} \sect~I.5 p.~12. \enquote{Closely allied to this is the discussion of probable and average quantities, dealing with cases where we cannot measure individual quantity, but only approximate and average results. Hence arise the \emph{Theory of Measurement}, \emph{Theory of Errors}, \emph{Theory of Probability}, \emph{Theory of Statistics}, etc.} \sect~XIV.6 p.~576},
 origdate =     {1892}
 }
 
@@ -93502,6 +93756,17 @@ pages =	       {605--611},
 keywords =     {power spectrum}
 }
 
+@Article{pfanzagl1963,
+author =       {J. Pfanzagl},
+title =	       {Sampling Procedures Based on Prior Distributions and Costs},
+journal =      tm,
+year =	       {1963},
+volume =       {5},
+number =       {1},
+pages =	       {47--61},
+keywords =     {conjugate prior, beta-binomial distribution, hypergeometric distribution}
+}
+
 @Article{pfeffer1986,
 author =       {Washek F. Pfeffer},
 title =	       {The divergence theorem},
@@ -94454,6 +94719,16 @@ author =       {A. Plastino and A. R. Plastino and B. H. Soffer},
 title =	       {Fisher information and thermodynamics' 1st.\ law},
 year =	       {2005},
 note =	       {\arxiveprint{cond-mat/0509697}}
+}
+
+@Article{platt1964,
+author =       {John R. Platt},
+title =	       {Strong Inference},
+journal =      sci,
+year =	       {1964},
+volume =       {146},
+number =       {3642},
+pages =	       {347--353}
 }
 
 @Article{plebanski1975,
@@ -95739,10 +96014,32 @@ note =	       {\osfeprint{uz29n}, \biorxiveprint{329193}, \arxiveprint{1805.0908
 }
 
 @Misc{portamanaetal2018c,
-author =       {Porta Mana, Piero Giovanni Luca and Daniela Bragantini and Ismail C{\"u}neyt G{\"u}zey and Yasser Roudi},
-title =	       {A reappreciation of {Bayesian} methods in genetics},
-year =	       {2018},
+author =       {Porta Mana, Piero Giovanni Luca and Daniela Bragantini and Ismail C{\"u}neyt G{\"u}zey},
+title =	       {Statistical relations between \textsc{snp}s and insomnia: a simplified {Bayesian} study},
+year =	       {2019},
 note =	       {In preparation. Draft available at \url{https://github.com/pglpm/genobayes/blob/master/genobayes2.pdf}}
+}
+
+@Misc{portamanaetal2018d,
+author =       {Porta Mana, Piero Giovanni Luca and Alexandre Filipowicz},
+title =	       {Bayesian {Plinko}: {Bayesian} models to mimic human inferences},
+year =	       {2018},
+note =	       {In preparation. Draft available at \url{https://github.com/pglpm/plinkinetti/raw/master/plinkinetti180414.pdf}},
+keywords =     {plinko, Bayesian probability theory}
+}
+
+@Misc{portamanaetal2020,
+author =       {Porta Mana, Piero Giovanni Luca and Vahid Rostami and Emiliano Torre},
+title =	       {Inferring the total activity of a large neuronal population from a small sample},
+year =	       {2020},
+note =	       {In preparation. Draft available at \url{https://github.com/pglpm/maxNt/blob/master/maxNt_v6.pdf}}
+}
+
+@Misc{portamanaetal2020b,
+author =       {Porta Mana, Piero Giovanni Luca and Bente Jacobsen and Menno Witter},
+title =	       {Bayesian methods for inferring neuronal connectivity},
+year =	       {2020},
+note =	       {In preparation. Draft available at \url{https://github.com/pglpm/rabidcount/raw/master/pglpm191017-Bentes_problem.pdf}}
 }
 
 @Article{porteretal2017,
@@ -99223,6 +99520,17 @@ year =	       {1903},
 address =      {Cambridge},
 note =	       {\url{http://www.archive.org/details/papersonmechanic03reynrich}, \url{http://gallica.bnf.fr/notice?N=FRBNF31205728\&UC=o}},
 keywords =     {continuum mechanics, theory of mixtures}
+}
+
+@Article{rezendeetal2014,
+author =       {Danilo Jimenez Rezende and Shakir Mohamed and Daan Wierstra},
+title =	       {Stochastic Backpropagation and Approximate Inference in Deep Generative Models},
+journal =      pmlr,
+year =	       {2014},
+volume =       {32},
+number =       {2},
+pages =	       {1278--1286},
+keywords =     {variational autoencoder, neural networks, machine learning, density estimation, probability theory, deep networks}
 }
 
 @Article{rezniketal1995,
@@ -109609,7 +109917,7 @@ keywords =     {Poisson statistics, neural networks}
 @Article{sohldicksteinetal2011,
 author =       {Sohl-Dickstein, Jascha and Peter Battaglino and Michael R. DeWeese},
 title =	       {Minimum probability flow learning},
-journal =      picml,
+journal =      pmlr,
 year =	       {2011},
 volume =       {28},
 pages =	       {905--912},
@@ -115161,6 +115469,14 @@ year =	       {2002},
 note =	       {\arxiveprint{quant-ph/0212075}}
 }
 
+@Misc{timokhinetal2020,
+author =       {Ivan Timokhin and Artem Mishchenko},
+title =	       {Novel approach to Room Temperature Superconductivity problem},
+year =	       {2020},
+note =	       {\arxiveprint{2003.14321}},
+keywords =     {electromagnetics, continuum mechanics}
+}
+
 @Article{timpson2003,
 author =       {Timpson, Christopher Gordon},
 title =	       {On a supposed conceptual inadequacy of the {Shannon} information in quantum mechanics},
@@ -115571,7 +115887,7 @@ pages =	       {1627--1638}
 }
 
 @Book{todhunter1865,
-author =       {I. Todhunter},
+author =       {Isaac Todhunter},
 title =	       {A History of the Mathematical Theory of Probability: From the Time of Pascal to that of Laplace},
 publisher =    {Macmillan},
 year =	       {1865},
@@ -121373,7 +121689,7 @@ year =	       {1969},
 volume =       {31},
 number =       {1},
 pages =	       {80--88},
-keywords =     {central-limit theorem, Bayesian probability theory}
+keywords =     {central-limit theorem, Bayesian probability theory, maximum-posterior approximation, Laplace approximation}
 }
 
 @Article{walker1975,
@@ -127402,8 +127718,4 @@ year =	       {2004},
 note =	       {\arxiveprint{quant-ph/0401119}}
 }
 
-% Many miles away something crawls to the surface
-% of a dark Scottish loch...
 
-%% Local Variables:
-%% End:
